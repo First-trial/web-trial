@@ -226,16 +226,16 @@ function createMessageGroup() {
 	var botTag = createElement({ classes: 'bot-tag' });
 	var date = new Date();
 	var time = date.getHours() + ':' + ('0' + date.getMinutes()).slice(-2);
+	var timestamp = createElement({ classes: 'timestamp', text: 'Today at ' + time, parent: usernameWrapper });
+	var out = {
+		group: group, avatar: avatar, comment: comment, usernameWrapper: usernameWrapper, username: username,
+		name: name, bot: bot, date: date
+	};
 	if (bot) {
 		usernameWrapper.appendChild(botTag);
 		out.botTag = botTag;
 	}
-	var timestamp = createElement({ classes: 'timestamp', text: 'Today at ' + time, parent: usernameWrapper });
-	var out = {
-		group: group, avatar: avatar, comment: comment, usernameWrapper: usernameWrapper, username: username,
-		name: name, bot: bot, timestamp: timestamp, date: date
-	};
-	
+	out.timestamp = timestamp;
 	if (avatarUrl) {
 		avatar.style.backgroundImage = 'url(' + avatarUrl + ')';
 	}
