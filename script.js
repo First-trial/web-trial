@@ -6,15 +6,15 @@ var demoEle = { lastMsgGroup: null };
 
 var users = {
 	phineas: {
-		username: 'Phineas',
+		username: 'EL® | Gaming With Rishi',
 		nameColor: 'hsl(345, 50%, 52%)',
-		avatar: 'https://cdn.discordapp.com/avatars/94490510688792576/a_46a9fccf4764d0311943d875cdc07128.webp?size=128'
+		avatar: 'https://cdn.discordapp.com/avatars/730454267533459568/1d02a3935ae909da2eff06c5d6c7e670.png?size=128'
 	},
 	paragon: {
-		username: 'Paragon',
+		username: 'Skyla',
 		nameColor: 'hsl(212, 51%, 59%)',
 		bot: true,
-		avatar: 'https://cdn.discordapp.com/avatars/273591274899111937/fe783607823a2028988b1a4bc26cfe3e.webp?size=128'
+		avatar: 'https://cdn.discordapp.com/avatars/870868241457774652/d961f1779e947ed264e96d257e02d227.png?size=128'
 	}
 };
 
